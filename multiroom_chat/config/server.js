@@ -15,7 +15,7 @@ app.set('views', './app/views');
 
 // Configurar os middlewares
 
-app.use(express.static('./ap/public'));
+app.use(express.static('./app/public'));
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(expressValidator());
 
