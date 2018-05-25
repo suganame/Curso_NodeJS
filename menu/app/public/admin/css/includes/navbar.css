@@ -1,7 +1,9 @@
 nav{
+	left: 0;
+	top: 0;
+	position: fixed;
 	height: 100%;
-	padding: 15px;
-	background-color: white;
-	float: left;
-	width: 30%;
+	width: 15%;
+	padding: 60px 15px 0px 15px;
+	background-color: gray;
 }
