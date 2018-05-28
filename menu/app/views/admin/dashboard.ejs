@@ -6,13 +6,54 @@
 	
 </head>
 <body>
-
 	<main>
-		<%- include('includes/header') %>
-		<!-- <%- include('includes/navbar') %> -->
 
-		<section class="content">
-			
+		<%- include('includes/navbar') %>
+
+		<section class="container-fluid content">
+			<div class="row">
+				<div class="col-4">
+					<div class="chart">
+						<header class="chart-header">Quantidade de produtos</header>
+						<section class="chart-body">
+							<div class="text-chart">823</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="chart">
+						<header class="chart-header">Produtos Inativos</header>
+						<section class="chart-body">
+							<div class="text-chart">150</div>
+						</section>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="chart">
+						<header class="chart-header">Produtos a Vencer</header>
+						<section class="chart-body">
+							<div class="text-chart">300</div>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div id="teste"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-5">
+					<div id="teste2"></div>
+				</div>
+				<div class="col-7">
+					<div id="teste3"></div>
+				</div>
+			</div>
+
+			<!-- <%- include('includes/header') %>			 -->
 		</section>
 	</main>
 

@@ -1,0 +1,34 @@
+.chart{
+	border-radius: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	font-size: 1.5em;
+	position: relative;
+	overflow: hidden;
+	padding: 15px;
+	color: rgba(255, 255, 255, 0.7);
+}
+	.chart .chart-header{
+		float: left;
+		text-align: left;
+		display: inline;
+		font-size: 0.7em;
+		position: relative;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		width: 100%;
+		margin-bottom: 5px;
+		padding-bottom: 8px;
+	}
+
+	.chart .chart-body{
+		float: left;		
+		position: relative;
+		padding: 15px;
+		text-align: center;
+		/* margin-top: 30px; */
+		width: 100%;
+	}
+
+	.text-chart{
+		font-size: 2em;
+		color: rgba(255, 255, 255, 1);
+	}
