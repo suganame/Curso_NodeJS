@@ -54,3 +54,11 @@
 					right: 0;
 					line-height: 22px;
 				}
+
+	.submenu{
+		display: none;		
+	}
+	.submenu li a{
+		padding: 10px 15px 10px 30px;
+		font-size: 0.95em ;
+	}
