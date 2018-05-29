@@ -4,6 +4,7 @@
 	position: fixed;
 	height: 100%;
 	width: 15%;
+	transition: width 0.3s;
 	/* padding-top: 56px; */
 	/* padding: 60px 15px 0px 15px; */
 	background-color: #2a2a2b;
@@ -38,6 +39,11 @@
 					background-color: #ce8704;
 				}
 
+				nav ul li a .menu-item{
+					display: inline-block;
+					margin: 0;
+				}
+
 				nav ul li a:hover{
 					background-color: #ce8704;
 					color: #FFF;
@@ -46,11 +52,29 @@
 
 				nav ul li a i{
 					margin-right: 15px;
-
+					width: 26px;
+					/* margin-left:  14px; */
 				}
 
 				nav ul li a .menu-icon-after{
 					position: absolute;
 					right: 0;
+					margin-right: 15px;
 					line-height: 22px;
+					transition: 0.3s;
 				}
+
+		.submenu{
+			display: none;
+			background-color: #444447;
+		}
+
+		.submenu li a{
+			/* padding: 10px 15px 10px 55px; */
+			font-size: 0.85em;
+		}
+
+.container-left-toggled{
+	width: 55px;
+	/* -moz-transition: width 0.3s; */
+}		
