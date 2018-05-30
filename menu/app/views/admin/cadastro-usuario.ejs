@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<%- include('includes/head') %>
+	<link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+	<main>
+
+		
+		<section class="container-left">
+			<%- include('includes/navbar', {"active": "cadastro"}) %>	
+		</section>
+
+		<section class="container-fluid content container-right">
+
+			<form action="">
+				<% if(tipoUsuario == 0){ %>
+					<h1>Cadastro de Administrador</h1>
+				<%} else if(tipoUsuario == 1){%>
+					<h1>Cadastro de Funcionário</h1>
+				<%} else {%>
+					<h1>Cadastro de Usuário</h1>
+				<%}%>
+
+				<hr>
+
+				<div class="form-row">
+					<div class="col">
+						<label for="user_password">Usuario:</label>
+						<input type="text" class="form-control" id="user_login" placeholder="Digite o login do usuário">
+					</div>
+					<div class="col">
+						<label for="user_password">Senha:</label>
+						<input type="password" class="form-control" id="user_password" placeholder="Digite a senha do usuário">
+					</div>					
+				</div>
+
+				<div class="form-row">
+					<div class="col">
+						<label for="user_password">E-mail:</label>
+						<input type="text" class="form-control" id="user_email" placeholder="Digite o e-mail do usuário">
+					</div>
+				</div>
+
+				<!-- <div class="form-row">
+					<div class="col">
+				    	<div class="custom-control custom-checkbox my-1 mr-sm-2">
+							<input type="checkbox" class="custom-control-input" id="customControlInline">
+							<label class="custom-control-label" for="customControlInline">Administrador</label>
+						</div>
+				    </div>
+				</div>	 -->	    
+				
+			</form>		
+			
+		</section>
+	</main>
+</body>
+</html>
+
+

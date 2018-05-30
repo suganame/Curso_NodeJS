@@ -1,26 +1,36 @@
 html, body{
 	background-color: #31353c;
 	width: 100%;
-	height: 100%;
 	position: relative;
 	min-height: 100%;
 	margin: 0;
 	color: white;
 }
 	main{
-		left: 0;
-		top: 0;
 		position: relative;
 		width: 100%;
-		height: 100%;
 	}
-		.content{
-			width: 85%;
-			height: 100%;
-			position: absolute; 
-			right: 0;
+		.container-left{
+			width: 100%;
+			max-width: 250px;
+			transition: max-width 0.3s;
+			background-color: #2a2a2b;
+			height: 100vh;
+			position: fixed;
 			top: 0;
-			text-align: center;
+			left: 0;
+		}
+		.container-left-toggled{
+			max-width: 55px;
+		}	
+		.container-right{
+			width: 100%;
+			padding-left: 265px;
+			box-sizing: border-box;
+			transition: padding 0.3s;
+		}
+		.container-right-max{
+			padding-left: 70px; 
 		}
 		.row{
 			margin-top: 15px;

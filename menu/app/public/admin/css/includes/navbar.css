@@ -1,87 +1,77 @@
-.container-left{
-	left: 0;
-	top: 0;
-	position: fixed;
+nav{
+	list-style: none;
 	height: 100%;
-	width: 15%;
-	transition: width 0.3s;
-	/* padding-top: 56px; */
-	/* padding: 60px 15px 0px 15px; */
-	background-color: #2a2a2b;
 }
 
-	.container-left .icon-logo{
-		display: inline-block;
-		width: 100%;
-		margin: 0 auto;
-		color: white;
+	nav ul{
+		position: relative;
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		height: 100%;
 	}
-		nav ul{
-			list-style: none;
-			margin: 0px;
-			padding: 0px;
+
+		nav li{
+			width: 100%;
+			display: inline-block;
 		}
 
-			nav li{
-				width: 100%;
-				display: inline-block;
+			nav ul li a{
+				display: block;
+				padding: 10px 15px;
+				color: #FFF;
+				text-decoration: none;
+				font-size: 1em;					
 			}
 
-				nav ul li a{
-					display: block;
-					padding: 10px 15px;
-					color: #FFF;
-					text-decoration: none;
-					font-size: 1em;
-				}
+			nav ul li a.active{
+				background-color: #ce8704;
+			}
 
-				nav ul li a.active{
-					background-color: #ce8704;
-				}
+			nav ul li a .menu-item{
+				display: inline-block;
+				margin: 0;
+				position: relative;
+			}
 
-				nav ul li a .menu-item{
-					display: inline-block;
-					margin: 0;
-				}
+			nav ul li a:hover{
+				background-color: #ce8704;
+				color: #FFF;
+				text-decoration: none;
+			}
 
-				nav ul li a:hover{
-					background-color: #ce8704;
-					color: #FFF;
-					text-decoration: none;
-				}
+			nav ul li a i{
+				margin-right: 15px;
+				width: 26px;
+				text-align: center;
+			}
 
-				nav ul li a i{
-					margin-right: 15px;
-					width: 26px;
-					/* margin-left:  14px; */
-				}
+			.container-toggle{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background-color: #444447;
+			}
 
-				nav ul li a .menu-icon-before{
-					/*position: absolute;
-					right: 0;*/
+			.container-toggle i {
+				text-align: center;
+				width: 100%;
+			}
 
-					margin-right: 30px;
-					line-height: 22px;
-				}
+			nav ul li a .menu-icon-after{
+				position: absolute;
+				right: 0;
+				margin-right: 15px;
+				line-height: 22px;
+			}
 
-				nav ul li a .menu-icon-after{
-					position: absolute;
-					right: 0;
-					margin-right: 15px;
-					line-height: 22px;
-				}
+	.submenu{
+		display: none;
+		background-color: #444447;
+		transition: display 0.5s;
+	}
 
-		.submenu{
-			display: none;
-			background-color: #444447;
-		}
-
-		.submenu li a{
-			/* padding: 10px 15px 10px 55px; */
-			font-size: 0.85em;
-		}
-
-.container-left-toggled{
-	width: 55px;
-	 -moz-transition: width 0.3s; 
-}		
+	.submenu-active{
+		display: block;
+	}
+	

@@ -1,54 +1,63 @@
+<nav class="main-nav">
+	<ul>
+		
+		<li>
+			<a href="dashboard" <% if(active == "dashboard"){ %> class="active" <%}%>><i class="fas fa-tachometer-alt fa-lg"></i><p class="menu-item">Dashboard</p></a>
+		</li>
 
-<div class="container-left">
-	<nav>
-		<ul>
-			<li class="container-toggle">
-				<a href="#"><span class="fas fa-angle-left fa-lg menu-icon-before"></span><p class="menu-item">Recuar Menu</p></a>
-			</li>
-			
-			<li>
-				<a href="#" class="active"><i class="fas fa-tachometer-alt fa-lg"></i><p class="menu-item">Dashboard</p></a>
-			</li>
+		<li class="submenu-item">
+			<a href="#" <% if(active == "cadastro"){ %> class="active" <%}%> ><i class="fas fa-user-plus fa-lg"></i>
+				<p class="menu-item">Cadastros</p>
+				<span class="fas fa-angle-left fa-lg menu-icon-after fa-rotate-180 <% if(active == "cadastro"){ %> fa-rotate-270 <%}%>"></span>
+			</a>
 
-			<li class="submenu-item">
-				<a href="#"><i class="fas fa-user-plus fa-lg"></i>
-					<p class="menu-item">Cadastros</p>
-					<span class="fas fa-angle-left fa-lg menu-icon-after fa-rotate-180"></span>
-				</a>
+			<ul class="submenu <% if(active == "cadastro"){ %> submenu-active <%}%> ">
 
-				<ul class="submenu">
+				<li>
+					<a href="cadastro-administrador"><i class="fas fa-user-cog fa-lg"></i><p class="menu-item">Administrador</p></a>
+				</li>
 
-					<li>
-						<a href="#"><i class="fas fa-user-cog fa-lg"></i><p class="menu-item">Administrador</p></a>
-					</li>
+				<li>
+					<a href="cadastro-funcionario"><i class="fas fa-user-tie fa-lg"></i><p class="menu-item">Funcionário</p></a>
+				</li>
 
-					<li>
-						<a href="#"><i class="fas fa-user-tie fa-lg"></i><p class="menu-item">Funcionário</p></a>
-					</li>
+				<li>
+					<a href="cadastro-usuario"><i class="fas fa-user fa-lg"></i><p class="menu-item">Usuário</p></a>
+				</li>
 
-					<li>
-						<a href="#"><i class="fas fa-user fa-lg"></i><p class="menu-item">Usuário</p></a>
-					</li>
+			</ul>
+		</li>
 
-				</ul>
-			</li>
+		<li class="submenu-item">
+			<a href="#"><i class="fas fa-clipboard-list fa-lg"></i>
+				<p class="menu-item">Relatórios</p>
+				<span class="fas fa-angle-left fa-lg menu-icon-after fa-rotate-180"></span>
+			</a>
 
-			<li>
-				<a href="#"><i class="fas far fa-clipboard fa-lg"></i><p class="menu-item">Estoque</p></a>
-			</li>
+			<ul class="submenu">
 
-			<li>
-				<a href="#"><i class="fas fa-hand-holding-usd fa-lg"></i><p class="menu-item">Metas Financeiras</p></a>
-			</li>
+				<li>
+					<a href="#"><i class="fas fa-boxes fa-lg"></i><p class="menu-item">Estoque</p></a>
+				</li>
 
-			<li>
-				<a href="#"><i class="far fa-question-circle fa-lg"></i><p class="menu-item">Ajuda e Suporte</p></a>
-			</li>
+			</ul>
+		</li>
 
-			<li>
-				<a href="#"><i class="fas fa-cogs fa-lg"></i><p class="menu-item">Opções</p></a>
-			</li>
+		<li>
+			<a href="#"><i class="fas fa-chart-line fa-lg"></i><p class="menu-item">Metas Financeiras</p></a>
+		</li>
 
-		</ul>
-	</nav>
-</div>
+		<li>
+			<a href="#"><i class="far fa-question-circle fa-lg"></i><p class="menu-item">Ajuda e Suporte</p></a>
+		</li>
+
+		<li>
+			<a href="#"><i class="fas fa-cogs fa-lg"></i><p class="menu-item">Opções</p></a>
+		</li>
+
+		<li class="container-toggle">
+			<a href="#"><i class="fas fa-angle-left fa-lg menu-icon-before"></i></a>
+		</li>
+
+	</ul>
+</nav>	
