@@ -56,6 +56,14 @@
 					/* margin-left:  14px; */
 				}
 
+				nav ul li a .menu-icon-before{
+					/*position: absolute;
+					right: 0;*/
+
+					margin-right: 30px;
+					line-height: 22px;
+				}
+
 				nav ul li a .menu-icon-after{
 					position: absolute;
 					right: 0;

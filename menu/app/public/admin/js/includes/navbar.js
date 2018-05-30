@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	var containerLeft = $('.container-left');
-	var submenu = $('.submenu-item');
-	var menuItem = $('.menu-item');
+	var submenu = $('.submenu-item');	
 	var menuToggle = $('.container-toggle');
+	var menuItem = $('.menu-item');
 
 	// navBar.html('');
 
@@ -18,15 +18,31 @@ $(document).ready(function() {
 
 	menuToggle.click(function(event) {
 
-		// menuItem.html('');
+		
+
+		// menuItem.toggleClass();
+
 		if( containerLeft.hasClass('container-left-toggled') ){
+
+			$('.menu-icon-before').removeClass('fa-rotate-180');
+
 			containerLeft.removeClass('container-left-toggled');
+
+			setTimeout(function(){
+				menuItem.show();	
+				$('.menu-icon-after').show();
+			}, 130);
+			
+			
 		}
 		else{
-			containerLeft.addClass('container-left-toggled');	
+			menuItem.hide();	
+			$('.menu-icon-after').hide();
+			$('.menu-icon-before').addClass('fa-rotate-180');
+			containerLeft.addClass('container-left-toggled');
+			
 		}
-
-		menuItem.toggle(300);
+		// });
 
 	});
 });
