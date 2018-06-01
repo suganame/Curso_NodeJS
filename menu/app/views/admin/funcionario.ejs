@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<%- include('includes/head') %>
+	<link rel="stylesheet" href="css/cadastro.css">
+	<link rel="stylesheet" href="css/pagination.css">
+</head>
+<body>
+	<main>
+
+		
+		<section class="container-left">
+			<%- include('includes/navbar', {"active": "cadastro"}) %>	
+		</section>
+
+		<section class="container-fluid content container-right">
+			
+			<!-- <form action="">
+
+				<h1>Cadastro de Funcionário</h1>
+
+				<hr>
+
+				<div class="form-row">
+					<div class="col-12">
+						<label for="nome">Nome:</label>
+						<input type="text" class="form-control" id="nome" placeholder="Digite o nome do usuário">
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-7">
+						<label for="email">E-mail:</label>
+						<input type="text" class="form-control" id="email" placeholder="Digite o e-mail do usuário">
+					</div>
+					<div class="col-5">
+						<label for="telefone">Telefone:</label>
+						<input type="text" class="form-control" id="telefone" placeholder="Digite o telefone do usuário">
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-4">
+						<label for="login">Usuario:</label>
+						<input type="text" class="form-control" id="login" placeholder="Digite o login do usuário">
+					</div>
+					<div class="col-4">
+						<label for="senha">Senha:</label>
+						<input type="password" class="form-control" id="senha" placeholder="Digite a senha do usuário">
+					</div>	
+					<div class="col-4">
+				    	<div class="form-group">
+							<label for="cargo">Cargo:</label>
+							<select id="cargo" class="form-control">
+								<option selected>Selecione o cargo...</option>
+								<option>Administrador</option>
+								<option>Funcionário</option>
+							</select>
+						</div>
+				    </div>									
+				</div>
+
+				<div class="form-row">
+					<div class="col-12">
+						<button type="submit" class="btn btn-success btn-submit btn-form">Enviar</button>
+						<button type="submit" class="btn btn-danger btn-cancel btn-form">Cancelar</button>
+					</div>
+				</div>
+				
+			</form> -->
+
+			
+
+			<nav>
+				<ul class="pagination justify-content-end">
+					<% if( current !== 1 ) {%>
+						<li class="page-item">
+							<a class="page-link" href="get-funcionario/1" tabindex="-1"><i class="fas fa-angle-double-left"></i></a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i></a>
+						</li>
+					<%}%>
+					<li class="page-item">
+						<a class="page-link" href="#">1</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">2</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">3</a>
+					</li>
+					<% if( current !== total ) {%>
+						<li class="page-item">
+							<a class="page-link" href="#"><i class="fas fa-angle-right"></i></a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a>
+						</li>
+					<%}%>
+				</ul>
+			</nav>
+
+			
+
+		</section>
+	</main>
+</body>
+</html>
+
+

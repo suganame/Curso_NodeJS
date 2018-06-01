@@ -2,14 +2,10 @@ module.exports.dashboard = function(application, req, res){
 	res.render('admin/dashboard');
 };
 
-module.exports.cadastroAdministrador = function(application, req, res){
-	res.render('admin/cadastro-usuario', {"tipoUsuario": 0});
-};
-
-module.exports.cadastroFuncionario = function(application, req, res){
-	res.render('admin/cadastro-usuario', {"tipoUsuario": 1});
+module.exports.funcionario = function(application, req, res, page, countPage){
+	res.render('admin/funcionario', {"current" : page, "total" : countPage});
 }
 
-module.exports.cadastroUsuario = function(application, req, res){
-	res.render('admin/cadastro-usuario', {"tipoUsuario": 2});
-}
+// module.exports.funcionarioGetAll = function(application, req, res, page, countPage){
+// 	res.render('admin/funcionario', {"current" : page, "total" : countPage});
+// }

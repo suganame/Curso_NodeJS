@@ -1,9 +1,9 @@
-nav{
+nav.main-nav{
 	list-style: none;
 	height: 100%;
 }
 
-	nav ul{
+	nav.main-nav ul{
 		position: relative;
 		list-style: none;
 		margin: 0px;
@@ -11,12 +11,12 @@ nav{
 		height: 100%;
 	}
 
-		nav li{
+		nav.main-nav li{
 			width: 100%;
 			display: inline-block;
 		}
 
-			nav ul li a{
+			nav.main-nav ul li a{
 				display: block;
 				padding: 10px 15px;
 				color: #FFF;
@@ -24,41 +24,41 @@ nav{
 				font-size: 1em;					
 			}
 
-			nav ul li a.active{
+			nav.main-nav ul li a.active{
 				background-color: #ce8704;
 			}
 
-			nav ul li a .menu-item{
+			nav.main-nav ul li a .menu-item{
 				display: inline-block;
 				margin: 0;
 				position: relative;
 			}
 
-			nav ul li a:hover{
+			nav.main-nav ul li a:hover{
 				background-color: #ce8704;
 				color: #FFF;
 				text-decoration: none;
 			}
 
-			nav ul li a i{
+			nav.main-nav ul li a i{
 				margin-right: 15px;
 				width: 26px;
 				text-align: center;
 			}
 
-			.container-toggle{
+			nav.main-nav .container-toggle{
 				position: absolute;
 				bottom: 0;
 				left: 0;
 				background-color: #444447;
 			}
 
-			.container-toggle i {
+			nav.main-nav .container-toggle i {
 				text-align: center;
 				width: 100%;
 			}
 
-			nav ul li a .menu-icon-after{
+			nav.main-nav ul li a .menu-icon-after{
 				position: absolute;
 				right: 0;
 				margin-right: 15px;

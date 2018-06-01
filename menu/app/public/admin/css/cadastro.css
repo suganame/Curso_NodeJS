@@ -1,3 +1,16 @@
 .container-right form{
 	margin: 15px;
 }
+
+.form-row{
+	margin-top: 15px;
+}
+
+.btn-form{
+	padding: 10px 30px;
+	float: right;
+}
+
+.btn-cancel{
+	margin-right: 15px;
+}
