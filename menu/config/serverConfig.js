@@ -1,5 +1,7 @@
 var express = require('express');
 var consign = require('consign');
+// var path = require('path');
+// var serveStatic = require('serve-static');
 var expressPartials = require('express-partials');
 
 var app = express();
@@ -7,8 +9,8 @@ var app = express();
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
+app.use(express.static( './app/public'));
 
-app.use(express.static('./app/public'));
 app.use('/jquery', express.static('./node_modules/jquery/dist/'));
 app.use(expressPartials());
 

@@ -5,7 +5,7 @@
 	color: white;
 }
 	.pagination li a.page-link:hover{
-		background-color: #ce8704;
+		background-color: #1d1c1b;
 	}
 
 .pagination li a.disabled{
@@ -17,3 +17,12 @@
 	background-color: #444447;
 	border-color: #2a2a2b;
 }
+
+.page-item.active .page-link, .page-item.active .page-link:hover{
+	background-color: #ce8704;
+	border-color: #ce8704;
+}
+
+	.page-item .page-link:focus{
+		box-shadow: none;
+	}
