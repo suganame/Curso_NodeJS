@@ -1,8 +1,12 @@
-.pagination li a.page-link{
-	background-color: #2a2a2b;
+.pagination li a.page-link, .page-item.disabled .page-link{
 	background-color: #444447;
 	border-color: #2a2a2b;
 	color: white;
+	min-height: 30px;
+	min-width: 30px;
+	padding: 0px 6px;
+	line-height: 30px;
+	text-align: center;
 }
 	.pagination li a.page-link:hover{
 		background-color: #1d1c1b;
@@ -13,9 +17,7 @@
 }
 
 .page-item.disabled .page-link{
-	background-color: #2a2a2b;
-	background-color: #444447;
-	border-color: #2a2a2b;
+	color: #6c757d;
 }
 
 .page-item.active .page-link, .page-item.active .page-link:hover{

@@ -14,3 +14,48 @@
 .btn-cancel{
 	margin-right: 15px;
 }
+.table-title{
+	background-color: #374E6B;
+	padding: 15px 20px;
+	border-radius: 3px 3px 0px 0px;
+}	
+	.table-title .btn{
+		border-radius: 3px;
+		float: right;
+	}
+		.table-title .btn i{
+			margin-right: 5px;
+		}
+
+.table{
+	background-color: white;
+	color: #495057;
+	position: relative;
+	border-radius: 3px;
+}
+	.table thead{
+		color: #4670A5;
+	}		
+.table-entries{
+	float: left;
+	color: #6c757d;
+	line-height: 30px;
+}
+.table-pagination{
+	float: right;
+}
+
+.table-responsive{
+	padding: 20px;	
+}
+
+.table-filters .filters{
+	float: right;
+	margin-left: 15px;
+}
+.form-funcionario{
+	display: none;
+}
+.form-modal-content{
+	display: none;
+}
