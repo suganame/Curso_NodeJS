@@ -1,7 +1,5 @@
 var express = require('express');
 var consign = require('consign');
-// var path = require('path');
-// var serveStatic = require('serve-static');
 var expressPartials = require('express-partials');
 
 var app = express();
