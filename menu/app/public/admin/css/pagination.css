@@ -21,8 +21,8 @@
 }
 
 .page-item.active .page-link, .page-item.active .page-link:hover{
-	background-color: #ce8704;
-	border-color: #ce8704;
+	background-color: #0069d9;
+	border-color: #0069d9;
 }
 
 	.page-item .page-link:focus{
