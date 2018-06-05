@@ -40,6 +40,10 @@
 	float: left;
 	color: #6c757d;
 	line-height: 30px;
+	margin-left: 15px;
+}
+.table-entries caption{
+	float: left;
 }
 .table-pagination{
 	float: right;
@@ -49,10 +53,28 @@
 	padding: 20px;	
 }
 
-.table-filters .filters{
+.table-filters button{
 	float: right;
-	margin-left: 15px;
+	width: 100%;
 }
+
+/*.table-filters{
+}
+
+.table-filters button{
+}
+	.table-filters label{
+	}
+	.table-filters input{
+		display: inline-block;
+		float: left;
+		flex-grow: 
+	}
+	.table-filters select{
+		display: inline-block;
+		float: left;
+	}*/
+
 .form-funcionario{
 	display: none;
 }

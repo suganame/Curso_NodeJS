@@ -87,11 +87,11 @@
 					</div>
 				</div>
 
-				<hr>
+				<!-- <hr> -->
 
-				<div class="table-filters">
+				<!-- <div class="table-filters">
 					<div class="row">
-						<div class="col-2">
+						<div class="col-3">
 							<label for="quantidade-registros">Registros por página:</label>
 							<select class="custom-select" id="quantidade-registros">
 							    <option selected value="1">10</option>
@@ -100,43 +100,70 @@
 							</select>							
 						</div>
 
-						<div class="col-10">
-		
-							<div class="filters filter-nome">
-								<label for="nome">Nome:</label>
-								<input type="text" class="form-control" id="nome" placeholder="Nome do Funcionário">
-							</div>
+						<div class="col-2">
+							<div class="filters filter-status">
+								<label for="status">Status:</label>
+								<select class="form-control" id="status">
+									<option selected value="1">Todos</option>
+								    <option value="2">Ativos</option>
+								    <option value="3">Inativos</option>
+								</select>
+							</div>							
+						</div>
 
+						<div class="col-2">
 							<div class="filters filter-cargo">
 								<label for="cargo">Cargo:</label>
-								<select class="custom-select" id="cargo">
+								<select class="form-control" id="cargo">
 									<option selected value="1">Todos</option>
 								    <option value="2">Funcionario</option>
 								    <option value="3">Administrador</option>
 								</select>
 							</div>
+						</div>
 
+						<div class="col-4">
+							<div class="filters filter-nome">
+								<label for="nome">Nome:</label>
+								<input type="text" class="form-control" id="nome" placeholder="Nome do Funcionário">
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+				<hr>
+
+				<div class="table-filters">
+					<div class="row">
+						<div class="col-2">
 							<div class="filters filter-status">
-								<label for="status">Status:</label>
-								<select class="custom-select" id="status">
-									<option selected value="1">Todos</option>
+								<select class="form-control" id="status">
+									<option selected value="0">Status</option>
 								    <option value="2">Ativos</option>
 								    <option value="3">Inativos</option>
 								</select>
+							</div>							
+						</div>
+
+						<div class="col-2">
+							<div class="filters filter-cargo">
+								<select class="form-control" id="cargo">
+									<option selected value="1">Cargo</option>
+								    <option value="2">Funcionario</option>
+								    <option value="3">Administrador</option>
+								</select>
 							</div>
-
-
 						</div>
 
-						<!-- <div class="col-3">
-							
+						<div class="col-7">
+							<div class="filters filter-nome">
+								<input type="text" class="form-control" id="filter-nome" placeholder="Nome do Funcionário">
+							</div>
 						</div>
-						<div class="col-3">
-							
+
+						<div class="col-1">
+							<button class="btn btn-primary"><i class="fas fa-search"></i></button>
 						</div>
-						<div class="col">
-							
-						</div> -->
 					</div>
 				</div>
 
@@ -217,8 +244,13 @@
 				</table>
 
 				<div class="clearfix">
+					<!-- <select class="filter-entities" id="quantidade-registros">
+					    <option selected value="1">10</option>
+					    <option value="2">15</option>
+					    <option value="3">20</option>
+					</select> -->
 					<div class="table-entries">
-						<caption>Exibindo 10 de 100 registros </caption>
+						<caption>Exibindo 15 de 100 registros</caption>
 					</div>
 					<div class="table-pagination">
 						<nav>

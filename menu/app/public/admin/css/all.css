@@ -14,7 +14,7 @@ html, body{
 		.container-left{
 			width: 100%;
 			max-width: 250px;
-			transition: max-width 0.3s;
+			/*transition: max-width 0.3s;*/
 			background-color: #2a2a2b;
 			height: 100vh;
 			position: fixed;
@@ -28,7 +28,7 @@ html, body{
 			width: 100%;
 			padding: 15px 15px 15px 265px;
 			box-sizing: border-box;
-			transition: padding 0.3s;
+			/*transition: padding 0.3s;*/
 		}
 		.container-right-max{
 			padding-left: 70px; 
